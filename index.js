@@ -90,51 +90,29 @@
 // console.log(100>17)
 // console.log(18<=18)
 
-function analyzeSentence() {
-    let length = 0; // Counter for the number of characters
-    let wordCount = 0; // Counter for the number of words
-    let vowelCount = 0; // Counter for the number of vowels
-    const vowels = new Set(['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']); // Set of vowels
-
-    let sentence = prompt("Enter a sentence ending with a period ('.'): This is a test."); // Read the sentence from the user
-
-    if (!sentence.endsWith('.')) {
-        console.log("Sentence must end with a period ('.').");
-        return;
+// javascript object
+var staff = {
+    fullName: 'Alex',
+    job: 'stock management',
+    age: undefined,
+    disability: null,
+    wagePerDay: 20000,
+    numberOfDaysPresent:20,
+    salary: function(){
+        return this.wagePerDay*this.numberOfDaysPresent
+    },
+    marriedStatus: false,
+    phone: 7080007565,
+    hobbies: ['coding','cooking','movies'],
+    address: {
+        number: 2,
+        street: 'alagomeji',
+        city: 'yaba',
+        state: 'lagos',
+        country: 'Nigeria',
     }
-
-    let prevChar = null;
-    for (let i = 0; i < sentence.length; i++) {
-        let char = sentence[i];
-
-        if (char === '.') {
-            // Handle the last word before the period
-            if (prevChar && prevChar !== ' ') {
-                wordCount++;
-            }
-            break;
-        }
-
-        if (char !== ' ') {
-            length++; // Count non-space characters
-        }
-
-        if (vowels.has(char)) {
-            vowelCount++; // Count vowels
-        }
-
-        if (char === ' ' && prevChar && prevChar !== ' ') {
-            wordCount++; // Increment word count on space
-        }
-
-        prevChar = char; // Update the previous character
-    }
-
-    // Output the results
-    console.log("Length of the sentence (excluding '.'): " + length);
-    console.log("Number of words: " + wordCount);
-    console.log("Number of vowels: " + vowelCount);
 }
-
-// Example usage
-analyzeSentence();
+console.log(staff.salary())
+staff.marriedStatus = true
+staff.hobbies[0] = 'travelling'
+console.log(staff.hobbies[0])
