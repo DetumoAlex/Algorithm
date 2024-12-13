@@ -116,3 +116,61 @@ console.log(staff.salary())
 staff.marriedStatus = true
 staff.hobbies[0] = 'travelling'
 console.log(staff.hobbies[0])
+
+// functions
+function greeting(){
+    return console.log('merry christmas')
+}
+greeting()
+
+function add(x,y){
+    var sum = x+y
+    return console.log(sum)
+}
+add(5,2)
+add(6,8)
+
+function areaOfCircle(r){
+    var area = Math.PI * (r**2)
+    return console.log(area)
+}
+areaOfCircle(2)
+
+function perimeterOfTriangle(a,b,c){
+    var perimeter = a+b+c
+    return console.log(perimeter)
+
+}
+perimeterOfTriangle(5,5,10)
+
+function areaOfTriangle(b,h){
+    var area = 0.5*(b*h)
+    return console.log(area)
+}
+areaOfTriangle(5,2)
+
+function salute(name){
+    return console.log('hello ' + name)
+}
+salute('alex')
+
+// switch
+// var score = 65
+// switch(score){
+//     case (score <= 40):
+//         console.log('your grade is D')
+//         break;
+    
+//     case (score >= 41 && score <= 50):
+//         console.log('your grade is C')
+//         break;
+
+//     case (score >= 51 && score <= 70 ):
+//         console.log('your grade is B')
+//         break;
+
+//     default:
+//         console.log('your grade is A')
+        
+// }
+
