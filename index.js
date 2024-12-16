@@ -91,68 +91,68 @@
 // console.log(18<=18)
 
 // javascript object
-var staff = {
-    fullName: 'Alex',
-    job: 'stock management',
-    age: undefined,
-    disability: null,
-    wagePerDay: 20000,
-    numberOfDaysPresent:20,
-    salary: function(){
-        return this.wagePerDay*this.numberOfDaysPresent
-    },
-    marriedStatus: false,
-    phone: 7080007565,
-    hobbies: ['coding','cooking','movies'],
-    address: {
-        number: 2,
-        street: 'alagomeji',
-        city: 'yaba',
-        state: 'lagos',
-        country: 'Nigeria',
-    }
-}
-console.log(staff.salary())
-staff.marriedStatus = true
-staff.hobbies[0] = 'travelling'
-console.log(staff.hobbies[0])
+// var staff = {
+//     fullName: 'Alex',
+//     job: 'stock management',
+//     age: undefined,
+//     disability: null,
+//     wagePerDay: 20000,
+//     numberOfDaysPresent:20,
+//     salary: function(){
+//         return this.wagePerDay*this.numberOfDaysPresent
+//     },
+//     marriedStatus: false,
+//     phone: 7080007565,
+//     hobbies: ['coding','cooking','movies'],
+//     address: {
+//         number: 2,
+//         street: 'alagomeji',
+//         city: 'yaba',
+//         state: 'lagos',
+//         country: 'Nigeria',
+//     }
+// }
+// console.log(staff.salary())
+// staff.marriedStatus = true
+// staff.hobbies[0] = 'travelling'
+// console.log(staff.hobbies[0])
 
-// functions
-function greeting(){
-    return console.log('merry christmas')
-}
-greeting()
+// // functions
+// function greeting(){
+//     return console.log('merry christmas')
+// }
+// greeting()
 
-function add(x,y){
-    var sum = x+y
-    return console.log(sum)
-}
-add(5,2)
-add(6,8)
+// function add(x,y){
+//     var sum = x+y
+//     return console.log(sum)
+// }
+// add(5,2)
+// add(6,8)
 
-function areaOfCircle(r){
-    var area = Math.PI * (r**2)
-    return console.log(area)
-}
-areaOfCircle(2)
+// function areaOfCircle(r){
+//     var area = Math.PI * (r**2)
+//     return console.log(area)
+// }
+// areaOfCircle(2)
 
-function perimeterOfTriangle(a,b,c){
-    var perimeter = a+b+c
-    return console.log(perimeter)
+// function perimeterOfTriangle(a,b,c){
+//     var perimeter = a+b+c
+//     return console.log(perimeter)
 
-}
-perimeterOfTriangle(5,5,10)
+// }
+// perimeterOfTriangle(5,5,10)
 
-function areaOfTriangle(b,h){
-    var area = 0.5*(b*h)
-    return console.log(area)
-}
-areaOfTriangle(5,2)
+// function areaOfTriangle(b,h){
+//     var area = 0.5*(b*h)
+//     return console.log(area)
+// }
+// areaOfTriangle(5,2)
 
-function salute(name){
-    return console.log('hello ' + name)
-}
-salute('alex')
+// function salute(name){
+//     return console.log('hello ' + name)
+// }
+// salute('alex')
 
 // switch
 // var score = 65
@@ -174,3 +174,56 @@ salute('alex')
         
 // }
 
+var name = 'Alex'
+var phone = 7080007565
+var disability = null
+var marriedStatus = false
+var account = undefined
+
+var fullName = 'kitan'
+var job = 'stripper'
+var salary = 8000
+var club = 'club 234'
+
+var sentence = 'my name is '+ fullName + ' i am a ' + job + ' i earn $' + salary +' at ' + club 
+console.log(sentence)
+
+let sentence2 = `my name is ${fullName} i am a ${job} i earn $${salary} at ${club}`
+console.log(sentence2)
+
+// if (salary<20000){
+//     console.log('poor stripper')
+// }else{
+//     console.log('rich stripper')
+// }
+
+salary>20000 ? console.log('poor stripper') : console.log('rich stripper')
+
+function profit(cp,sp){
+    var profit = sp-cp
+    return console.log(profit)
+}
+profit(1000,1500)
+
+function percentageProfit(p,cp){
+    var percentageProfit = (p/cp)* 100
+    return console.log(percentageProfit)
+}
+percentageProfit(500,1000)
+
+function areaOfTriangle(b,h){
+    var area = 0.5*(b*h)
+    return console.log(area)
+}
+areaOfTriangle(10,5)
+
+function areaOfCylinder(r,h){
+    var areaOfCylinder = 2*Math.PI*r*(r+h)
+    return console.log(areaOfCylinder)
+}
+areaOfCylinder(5,7)
+
+function greeting(){
+    return console.log('hello everybody')
+}
+greeting()
